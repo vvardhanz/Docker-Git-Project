@@ -34,5 +34,5 @@ ADD . /usr/local/Docker-Git-Project
 RUN cd /usr/local/Docker-Git-Project && mvn assembly:assembly
 
 #THE CMD COMMAND tells docker the command to run when the container is started up from the image. In this case we are
-# executing the java program as is to print Hello World.
+# executing the java program as is to print Hello World. ok 
 CMD ["java", "-cp", "/usr/local/Docker-Git-Project/target/Docker-Git-Project-0.0.1-SNAPSHOT-jar-with-dependencies.jar", "org.vvardhanz.docker.git.HelloWorldPing"]
